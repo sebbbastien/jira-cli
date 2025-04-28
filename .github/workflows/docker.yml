@@ -5,6 +5,9 @@ on:
   workflow_dispatch:
   release:
     types: [published, prereleased]
+  push:
+    branches-ignore:
+      - gh-pages
 
 env:
   REGISTRY: ghcr.io
