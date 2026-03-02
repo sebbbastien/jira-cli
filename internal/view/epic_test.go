@@ -97,7 +97,6 @@ func TestEpicData(t *testing.T) {
 	}
 
 	epic := EpicList{
-		Total:   2,
 		Project: "TEST",
 		Server:  "https://test.local",
 		Data:    []*jira.Issue{&epic1, &epic2},
@@ -135,7 +134,7 @@ func TestEpicData(t *testing.T) {
 		},
 		{
 			Key:  "TEST-2",
-			Menu: "➤ TEST-2: ⦗EPIC⦘ This is another test",
+			Menu: "➤ TEST-2: [EPIC[] This is another test",
 			Contents: tui.TableData{
 				[]string{
 					"TYPE", "KEY", "SUMMARY", "STATUS", "ASSIGNEE", "REPORTER", "PRIORITY", "RESOLUTION",
